@@ -6,10 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Exemplo PHP PW1</title>
 	<link rel="icon" type="img/icon" href="imagens\icons8-php-64.png">
-	<link rel="stylesheet" href="js\bootstrap.bundle.min.js">
-	<link rel="stylesheet" href="css\estilo.css">
+	<link rel="stylesheet" href="css\bootstrap.css">
 	<style>
-
+		.imagem {
+			width: 200px;
+			height: auto;
+		}
 	</style>
 </head>
 
@@ -37,7 +39,7 @@
 							<th width="100px">C&oacute;digo</th>
 							<th width="250px">Produto</th>
 							<th width="100px">Valor</th>
-							<th width="100px">Produto</th>
+							<th width="200px">Imagem</th>
 						</tr>';
 
 				while ($dados = mysqli_fetch_array($query)) {
@@ -45,9 +47,9 @@
 					echo "<td align='center'>" . $dados['id'] . "</td>";
 					echo "<td>" . $dados['codigo'] . "</td>";
 					echo "<td>" . $dados['produto'] . "</td>";
-					echo "<td align='right'> R$ " . $dados['valor'] . "</td>";
+					echo "<td align='center'> R$ " . $dados['valor'] . "</td>";
 					// buscando a na pasta imagem
-					echo "<td><img src='img/" . $dados['imagem'] . "'></td>";
+					echo "<td><img src='img/" . $dados['imagem'] . "' class='imagem'></td>";
 					echo "</tr>";
 				}
 				echo "</table>";
