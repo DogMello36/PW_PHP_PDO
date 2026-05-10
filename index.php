@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Exemplo PHP PW1</title>
-	<link rel="icon" type="img/icon" href="imagens\icons8-php-64.png">
+	<link rel="icon" type="img/icon" href="img\icon.png">
 	<link rel="stylesheet" href="css\bootstrap.css">
 	<style>
 		.imagem {
